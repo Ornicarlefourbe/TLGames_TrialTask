@@ -1,0 +1,10 @@
+Module
+  name: game_jumpwindow
+  description: A UI with a button that jumps
+  author: Thomas
+  sandboxed: true
+  dependencies: [ game_interface ]
+  sandboxed: true
+  scripts: [ jumpwindow ]
+  @onLoad: init()
+  @onUnload: terminate()

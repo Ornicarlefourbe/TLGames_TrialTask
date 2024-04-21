@@ -1,0 +1,15 @@
+MainWindow
+  !text: tr('')
+  size: 350 350
+
+  @onEscape: modules.game_jumpwindow.hide()
+  @onEnter: modules.game_jumpwindow.onJumpClicked()
+
+  Button
+    id: jumpbutton
+    anchors.top: moduleList.bottom
+    anchors.left: moduleList.left
+    margin-top: 8
+    !text: tr('Jump!')
+    text-auto-resize: true
+    @onClick: modules.game_jumpwindow.onJumpClicked()
